@@ -77,4 +77,41 @@ export default {
         </nav>
     </header>
 </template>
-<style  lang="scss" scoped></style>
+<style  lang="scss" scoped>
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: 150px;
+
+    ul {
+
+        display: flex;
+        list-style-type: none;
+
+        li {
+            margin-top: 20px;
+            margin: 0px 20px;
+            max-height: 100px;
+            display: inline-block;
+            align-items: center;
+
+            a {
+                font-size: 1rem;
+                font-weight: bold;
+                color: black;
+                text-decoration: none;
+                height: 50px;
+
+                &:hover {
+                    border-bottom: 5px solid blue;
+                    padding-bottom: 70px;
+                    color: blue;
+                }
+            }
+
+        }
+    }
+}
+</style>

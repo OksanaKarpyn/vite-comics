@@ -9,16 +9,21 @@ export default {
 }
 </script>
 <template>
-    <div class="container">
-        <a href="#">
-            <h2>{{ message }} </h2>
-        </a>
+    <div class="background">
+        <div class="container">
+            <a href="#">
+                <h2>{{ message }} </h2>
+            </a>
+        </div>
     </div>
 </template>
 <style lang="scss" scoped>
+.background {
+    background-color: #1C1C1C;
+}
+
 div {
     height: 150px;
-    background-color: rgb(24, 23, 23);
     display: flex;
     align-items: center;
 

@@ -36,19 +36,24 @@ export default {
 }
 </script>
 <template>
-    <div class="container">
-        <ul>
-            <li v-for="(item, index) in  itemList ">
-                <img :src="item.icon" alt="foto">
-                <p>{{ item.name }}</p>
-            </li>
-        </ul>
+    <div class="background">
+        <div class="container">
+            <ul>
+                <li v-for="(item, index) in  itemList ">
+                    <img :src="item.icon" alt="foto">
+                    <p>{{ item.name }}</p>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <style lang="scss" scoped>
+.background {
+    background-color: #0282F9;
+}
+
 div {
     height: 150px;
-    background-color: rgb(48, 48, 159);
     display: flex;
     align-items: center;
 
