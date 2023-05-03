@@ -17,6 +17,7 @@ export default {
 
 <template>
   <HeaderNav></HeaderNav>
+  <MainHeaderContent></MainHeaderContent>
   <h1>ciao</h1>
 </template>
 
