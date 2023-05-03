@@ -105,9 +105,9 @@ nav {
                 height: 50px;
 
                 &:hover {
-                    border-bottom: 5px solid blue;
+                    border-bottom: 5px solid #0282F9;
                     padding-bottom: 70px;
-                    color: blue;
+                    color: #0282F9;
                 }
             }
 

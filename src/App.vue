@@ -3,6 +3,7 @@ import HeaderNav from './components/HeaderNav.vue';
 import MainHeaderContent from './components/MainHeaderContent.vue';
 import MainHeaderNav from './components/MainHeaderNav.vue';
 import MainContent from './components/MainContent.vue';
+import Footer from './components/Footer.vue';
 export default {
   name: 'AppVue',
   components: {
@@ -10,6 +11,7 @@ export default {
     MainHeaderContent,
     MainHeaderNav,
     MainContent,
+    Footer,
   }
 }
 
@@ -20,7 +22,7 @@ export default {
   <MainHeaderContent></MainHeaderContent>
   <MainHeaderNav></MainHeaderNav>
   <MainContent></MainContent>
-  <h1>ciao</h1>
+  <Footer></Footer>
 </template>
 
 <style lang="scss" >
