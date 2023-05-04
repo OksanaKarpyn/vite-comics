@@ -1,28 +1,34 @@
 <script>
 import HeaderNav from './components/HeaderNav.vue';
-import MainHeaderContent from './components/MainHeaderContent.vue';
+import MainHeader from './components/MainHeader.vue';
 import MainHeaderNav from './components/MainHeaderNav.vue';
 import MainContent from './components/MainContent.vue';
-import Footer from './components/Footer.vue';
+import FooterComp from './components/FooterComp.vue';
 export default {
   name: 'AppVue',
   components: {
     HeaderNav,
-    MainHeaderContent,
+    MainHeader,
     MainHeaderNav,
     MainContent,
-    Footer,
+    FooterComp,
   }
 }
 
 </script>
 
 <template>
-  <HeaderNav></HeaderNav>
-  <MainHeaderContent></MainHeaderContent>
-  <MainHeaderNav></MainHeaderNav>
-  <MainContent></MainContent>
-  <Footer></Footer>
+  <header>
+    <HeaderNav></HeaderNav>
+  </header>
+  <main>
+    <MainHeader></MainHeader>
+    <MainHeaderNav></MainHeaderNav>
+    <MainContent></MainContent>
+  </main>
+  <footer>
+    <FooterComp></FooterComp>
+  </footer>
 </template>
 
 <style lang="scss" >

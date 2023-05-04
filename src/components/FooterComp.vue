@@ -66,12 +66,6 @@ ul {
             color: #0282F9;
             font-size: 1.2rem;
         }
-
-        a {
-            img {}
-        }
     }
 }
-
-.list-footer {}
 </style>
