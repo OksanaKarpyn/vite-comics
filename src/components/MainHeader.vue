@@ -89,8 +89,10 @@ export default {
 <template>
     <div class="background">
         <div class="banner"></div>
-        <div class="container gap-2">
+        <div class="container gap-3 py-5">
+            <a href="#" class="btn  button p-2  px-4">current series</a>
             <DcCosmics v-for="(item, index) in listCosmics" :key="index" :prompsCosmic="item"></DcCosmics>
+            <a href="#" class="load p-2  px-5">load more</a>
         </div>
     </div>
 </template>
@@ -105,8 +107,29 @@ export default {
     }
 
     .container {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+
+
+        .button {
+            text-transform: uppercase;
+            background-color: #0670D3;
+            color: white;
+            position: absolute;
+            top: -20px;
+            z-index: 1;
+            font-size: 1.3rem;
+        }
+
+        .load {
+            text-transform: uppercase;
+            background-color: #0670D3;
+            color: white;
+            text-decoration: none;
+            margin: auto;
+        }
     }
 
 }
